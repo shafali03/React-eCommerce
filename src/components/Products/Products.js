@@ -4,15 +4,8 @@ import { Grid } from '@material-ui/core'
 import Product from './Product/Product'
 import useStyles from './styles'
 
-const products = [
-  {
-    id: 1, name: 'COCO', description: 'Chanel', price: '£135',
-    image: 'https://res.cloudinary.com/shafali/image/upload/v1599648436/chanel-coco_pv73fc.jpg'
-  },
-  { id: 2, name: 'Jean Paul Gaultier', description: 'Jean Paul Gaultier Eau De Toilette', price: '£59', image: 'https://res.cloudinary.com/shafali/image/upload/v1599648203/Jean-paul_jiebmo.jpg' },
-]
 
-const Products = () => {
+const Products = ({ products }) => {
   const classes = useStyles()
 
 
