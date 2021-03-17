@@ -24,9 +24,8 @@ useEffect(() => {
     } catch (error) {
       
     }
-  
-  generateToken()
   }
+  generateToken()
 }, [cart])
 
 const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1)
@@ -48,7 +47,7 @@ const Confirmation = () => (
 
 const Form = () => activeStep === 0
 ? <AddressForm  checkoutToken={checkoutToken} next={next}/>
-: <PaymentForm  shippingData={shippingData}/>
+: <PaymentForm  shippingData={shippingData} checkoutToken={checkoutToken}/>
 
   return (
     <>
