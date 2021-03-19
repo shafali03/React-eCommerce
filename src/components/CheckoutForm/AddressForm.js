@@ -22,7 +22,6 @@ const methods = useForm()
 const fetchShippingCountries = async (checkoutTokenId) => {
   const { countries } = await commerce.services.localeListShippingCountries(checkoutTokenId)
 
-  console.log(countries)
   setShippingCountries(countries)
   setShippingCountry(Object.keys(countries)[0])
 }
@@ -43,7 +42,7 @@ const fetchShippingCountries = async (checkoutTokenId) => {
 
   useEffect(() => {
     fetchShippingCountries(checkoutToken.id)
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (shippingCountry) fetchSubdivisions(shippingCountry)
