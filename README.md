@@ -5,7 +5,8 @@
 ## Features
 * Full featured shopping cart
 * Stripe / credit card integration
-* Order summary email sent to customer
+* Order summary email to the customer
+* headless CMS [Commerce.js](https://commercejs.com)
 
 npm packages installed
 ```
@@ -16,4 +17,3 @@ npm packages installed
 react-router-dom
 react-hook-form
 ```
-
