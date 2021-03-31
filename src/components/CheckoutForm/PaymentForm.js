@@ -47,6 +47,7 @@ const PaymentForm = ({ checkoutToken, shippingData, backStep, onCaptureCheckout,
       <Review checkoutToken={checkoutToken} />
       <Divider />
       <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method</Typography>
+      <p>Please enter test card details  4000 0082 6000 0000 </p>
       <Elements stripe={stripePromise}>
         <ElementsConsumer>
         {({ elements, stripe }) => (
